@@ -148,6 +148,12 @@
 
         calendar.render();
       });
+     
+     eventClick: function(info) {
+     $('#eventTitle').text(info.event.title);
+     $('#eventDetails').text(`Starts: ${info.event.start}`);
+     $('#eventModal').modal('show');
+    }
     </script>
 
 
